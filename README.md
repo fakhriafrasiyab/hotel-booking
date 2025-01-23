@@ -24,7 +24,7 @@ A simple RESTful API for managing hotel bookings, built with **Spring Boot**, **
 - **Request Body**:
   ```json
   {
-    "customerName": "John Doe",
+    "customerName": "Fakhri Afrasiyabov",
     "hotelName": "Hotel California"
   }
   ```
@@ -32,7 +32,7 @@ A simple RESTful API for managing hotel bookings, built with **Spring Boot**, **
   ```json
   {
     "id": 1,
-    "customerName": "John Doe",
+    "customerName": "Fakhri Afrasiyabov",
     "hotelName": "Hotel California"
   }
   ```
@@ -44,12 +44,12 @@ A simple RESTful API for managing hotel bookings, built with **Spring Boot**, **
   [
     {
       "id": 1,
-      "customerName": "John Doe",
+      "customerName": "Fakhri Afrasiyabov",
       "hotelName": "Hotel California"
     },
     {
       "id": 2,
-      "customerName": "Jane Doe",
+      "customerName": "Fakhri Afrasiyabov",
       "hotelName": "Grand Hyatt"
     }
   ]
@@ -92,7 +92,7 @@ A simple RESTful API for managing hotel bookings, built with **Spring Boot**, **
 4. Access the application:
    - **Swagger UI**: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
    - **H2 Console**: [http://localhost:8080/h2-console](http://localhost:8080/h2-console)
-     - **JDBC URL**: `jdbc:h2:file:~/hotel_booking_db`
+     - **JDBC URL**: `jdbc:h2:mem:hotel_booking_db`
      - **Username**: `sa`
      - **Password**: (leave blank)
 
