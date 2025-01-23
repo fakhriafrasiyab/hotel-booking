@@ -107,8 +107,6 @@ src/main/java/org/booking
 │   └── BookingRepository.java
 ├── service             # Business logic layer
 │   └── BookingService.java
-└── config              # Application configurations
-    └── H2ServerConfig.java
 ```
 
 ## Testing
@@ -140,5 +138,3 @@ mvn test
 - Implement user authentication and authorization.
 - Deploy the application using Docker or cloud platforms.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
