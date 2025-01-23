@@ -15,6 +15,15 @@ public class BookingService {
     private BookingRepository bookingRepository;
 
     public Booking createBooking(Booking booking) {
+        // Check for duplicates
+        Optional<Booking> existingBooking = bookingRepository.findAll().stream()
+                .filter(b -> b.getCustomerName().equalsIgnoreCase(booking.getCustomerName())
+                        && b.getHotelName().equalsIgnoreCase(booking.getHotelName()))
+                .findFirst();
+
+        if (existingBooking.isPresent()) {
+            throw new IllegalArgumentException("A booking for this customer at this hotel already exists");
+        }
         return bookingRepository.save(booking);
     }
 
